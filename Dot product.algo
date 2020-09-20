@@ -1,0 +1,31 @@
+FUNCTION calculate_dot_product_of_2_vectors() : return_INTEGER;
+VAR
+    V1 , V2 : array of integer[];
+    dot_product : INTEGER := (V1[], V2[]);
+    product: INTEGER :=0;
+    i : INTEGER;
+BEGIN
+    FOR i FROM 0 TO max STEP 1  DO
+        product = product + V1[i] * V2[i]
+    END_FOR
+    RETURN product ;
+END
+
+//temp = temporary variable;
+
+
+ALGORITHM vectors_orthogonality
+VAR
+    V1 , V2 : array of integer[];
+    temp : INTEGER := [size]
+    i : INTEGER;
+BEGIN
+    FOR i FROM 0 TO size STEP 1 DO
+    calculate_dot_product_of_2_vectors();
+    IF (temp[i] == 0) THEN
+        write ('V1 and V2 are orthogonal')
+    ELSE
+        write (temp[i])
+    END_IF
+END_FOR
+END
